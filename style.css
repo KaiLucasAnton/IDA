@@ -1,16 +1,22 @@
+body {
+    background-image: url('background.jpg');
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
 #heading {
     font-family: Libre Baskerville;
     background-color: rgb(0, 0, 214);
     color: white;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 .link{
     color: white;
-    font-size: 3vw;
+    font-size: 2vw;
 }    
 #body {
 font-family: work sans;
-font-size: 3vw;
+font-size: 2vw;
 padding: 20px
 }
 #bod{
@@ -66,7 +72,7 @@ li{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    background: rgb(220, 235, 245)
+    background: rgba(181, 225, 255, 0.87)
 }
 
 .split {
@@ -81,12 +87,19 @@ li{
 
 .flex-item {
     flex-grow: 1;
-    flex-basis: 15%;
+    flex-basis: 33.333%;
     display: flex;
     flex-direction: column;
     font-family: "work sans"
 }
-
+.flex-item2 {
+    flex-grow: 1;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    font-family: "work sans";
+    border: 2px solid #6f00af;
+}
 @media screen and (max-width:700px){
     body{
         overflow-x:hidden;
@@ -117,14 +130,19 @@ li{
         font-size: 3vw;
     }
     .link{
-        font-size: 4vw;
+        font-size: 3vw;
     }
     .flex-item {
         flex-basis: 100%
     }
+    #body{
+        font-size:3vw
+    }
+    #heading{
+        font-size:3vw
+    }
 }
 body {
-    background-color: rgba(255, 233, 191, 0.199);
     color: rgb(0, 0, 87);
 }
 
@@ -156,7 +174,7 @@ body {
 h2{
     background: rgb(126, 208, 255);
     text-align: center;
-    font-size: 4vw;
+    font-size: 3vw;
 }
 
 .h2{
