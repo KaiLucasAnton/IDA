@@ -1,0 +1,168 @@
+#heading {
+    font-family: Libre Baskerville;
+    background-color: rgb(0, 0, 214);
+    color: white
+
+}
+.link{
+    color: white
+}    
+#body {
+font-family: work sans;
+}
+#head{
+    background-color: rgba(240, 255, 255, 0.30);
+    text-align: center;
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+}
+
+
+.nav-links{
+display: flex;
+margin: 0;
+padding:0;
+width:65%;
+}
+
+.nav-links li{
+    list-style: none;
+    list-style-type: none;
+}
+
+li{
+    margin:auto;
+}
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width:25px;
+    background: hsla(182, 100%, 50%, 0.459);
+    height: 3px;
+    margin:5px;
+}
+.container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background: rgb(220, 235, 245)
+}
+
+.split {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.split2 {
+    flex-basis: 33.333%;
+    display: flex;
+    flex-direction: column;
+}
+
+.split img {
+    max-width: 100%;
+}
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+@media screen and (max-width:700px){
+    body{
+        overflow-x:hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right:0px;
+        height: 92vh;
+        top:8vh;
+        background-color: rgb(188, 229, 253);
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        width:40%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .split {
+        flex: 1 100%;
+        flex-grow: inherit;
+    }
+    .split2 {
+        flex: 1 100%;
+        flex-grow: inherit;
+    }
+    .burger{
+        display: block;
+    }
+}
+body {
+    background-color: rgba(255, 233, 191, 0.199);
+    color: rgb(0, 0, 87);
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0%;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: navy;
+    color: white;
+    text-align: center;
+ }
+
+h2{
+    background: rgb(126, 208, 255);
+    text-align: center;
+}
+
+.h22{
+    background: rgb(182, 232, 255);
+}
+.h23{
+    background: rgb(80, 190, 241);
+}
+#bubble{
+    background: rgb(242, 220, 255);
+    font-family: "work sans";
+}
+
+#bubble2{
+    background: rgb(253, 243, 243);
+    font-family: "work sans";
+}
+
+#bubble3{
+    background: rgb(213, 255, 244);
+    font-family: "work sans";
+}
