@@ -85,6 +85,20 @@ li{
     max-width: 100%;
 }
 
+.split2 {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+}
+
+.split2-img{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+}
+.split2-img img{
+    max-width: 100%;   
+}
 .flex-item {
     flex-grow: 1;
     flex-basis: 33.333%;
@@ -100,10 +114,12 @@ li{
     font-family: "work sans";
     border: 2px solid #63019c93;
 }
+
 .flex-img img {
     flex-basis: 100%;
     max-width: 100%;   
 }
+
 @media screen and (max-width:700px){
     body{
         overflow-x:hidden;
@@ -125,7 +141,14 @@ li{
         flex: 1 100%;
         flex-grow: inherit;
     }
-
+    .split2 {
+        flex: 1 100%;
+        flex-grow: inherit;        
+    }
+    .split2-img {
+        flex: 1 100%;
+        flex-grow: inherit;        
+    }
     .burger{
         display: block;
     }
